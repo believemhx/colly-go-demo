@@ -17,6 +17,6 @@ func main() {
 	if demoVal == 1 {
 		llss.Run()
 	} else {
-		xunacg.SignIn()
+		xunacg.StartSign()
 	}
 }
