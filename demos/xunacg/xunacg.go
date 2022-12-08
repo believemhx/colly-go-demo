@@ -80,7 +80,9 @@ func StartSign() {
 	c.Async = false // 异步
 
 	for _, user := range data.Users {
-		SignByUser(user, c, 0)
+		if !user.Status {
+			SignByUser(user, c, 0)
+		}
 	}
 	c.Wait()
 }
